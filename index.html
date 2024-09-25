@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="style.css"> <!-- 連結外部CSS檔案 -->
 </head>
 <body>
-
     <!-- 背景音樂 -->
-    <audio autoplay loop>
+    <audio id="background-music" autoplay loop>
         <source src="5567.mp3" type="audio/mp3"> <!-- 替換成你的音樂檔案 -->
         您的瀏覽器不支持背景音樂播放。
     </audio>
@@ -54,9 +53,10 @@
             <p>&copy; 2024 Discord 社群 | <a href="https://discord.gg/whEKVQrp">加入我們</a></p>
         </div>
     </footer>
- <script>
-        // 背景音樂控制按鈕
-        const music = document.getElementById("5567.mp3");
+
+    <script>
+        // 背景音樂控制
+        const music = document.getElementById("background-music");
         music.volume = 0.1;  // 調整音量
     </script>
 </body>
